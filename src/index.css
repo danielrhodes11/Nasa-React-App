@@ -115,9 +115,13 @@ footer button:hover{
 
 }
 
+.sidebarContents h2 {
+  font-weight: 200;
+  font-size: 1.4rem;
+}
+
 .sidebarContents div{
   flex: 1;
-
 }
 
 .sidebarContents button{
@@ -128,12 +132,22 @@ footer button:hover{
   margin-right: auto;
   cursor: pointer;
   transition-duration: 200ms;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .sidebarContents button:hover{
   opacity: 0.7;
 }
+
+.descriptionTitle{
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.descriptionContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+} 
 
 .loadingState{
   display: flex;
@@ -147,6 +161,8 @@ footer button:hover{
   font-size: 3rem;
   animation: spin 1s linear infinite;
 }
+
+
 
 @keyframes spin{
 from{

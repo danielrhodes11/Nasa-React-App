@@ -26,20 +26,22 @@ function App() {
         console.log(err.message)
       }
     }
-    // fethAPIData()
+    fethAPIData()
   }, [])
 
   return (
     <>
-      {data ? (<Main />) : (
+      {data ? (<Main data={data} />) : (
         <div className="loadingState">
           <i className="fa-solid fa-gear"></i>
         </div>
       )}
       {showModal && (
-        <SideBar handleToggleModal={handleToggleModal} />
+        <SideBar data={data} handleToggleModal={handleToggleModal} />
       )}
-      <Footer handleToggleModal={handleToggleModal} />
+      {data &&
+        (<Footer data={data} handleToggleModal={handleToggleModal} />)
+      }
     </>
   )
 }
