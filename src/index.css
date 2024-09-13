@@ -91,7 +91,6 @@ footer button:hover{
   display: flex;
   flex-direction: column;
   z-index: 10;
-
 }
 .bgOverlay{
   position: absolute;
@@ -99,6 +98,8 @@ footer button:hover{
   background: #030615;
   opacity: 0.6;
 }
+
+
 .sidebarContents{
   z-index: 15;
   position: relative;
